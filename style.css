@@ -1,0 +1,135 @@
+/* Configurações Gerais e Fontes */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* Cabeçalho */
+header {
+    background: #1a2a44; /* Um azul escuro inspirado em logos de ciência */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid #efb810; /* Amarelo que lembra cerveja */
+}
+
+header .logo {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Seção Sobre o Evento */
+.sobre-evento {
+    padding: 3rem 0;
+    text-align: center;
+    background: #fff;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.sobre-evento h2 {
+    margin-top: 0;
+    color: #1a2a44;
+}
+
+/* Bloco de Conteúdo Principal (Foto + Texto) */
+.minha-experiencia {
+    margin-top: 3rem;
+}
+
+.content-block {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.content-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-block .image-container {
+    flex: 1; /* Ocupa metade do espaço */
+}
+
+.content-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.content-block .text-container {
+    flex: 1; /* Ocupa a outra metade */
+}
+
+.content-block h3 {
+    color: #efb810;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    background: #333;
+    color: #f4f4f4;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* Design Responsivo para Celulares */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .content-block, .content-block.reverse {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .content-block h3 {
+        margin-top: 1rem;
+    }
+}
